@@ -153,7 +153,7 @@ router.post('/user-create', function (req, res) {
   res.render('success-info', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'success-info',
-    info: 'User has been created',
+    info: 'Користувача створено',
   })
   // ↑↑ сюди вводимо JSON дані
 })
@@ -173,7 +173,7 @@ router.get('/user-delete', function (req, res) {
   res.render('success-info', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'success-info',
-    info: 'User has been deleted',
+    info: 'Користувача видалено',
   })
   // ↑↑ сюди вводимо JSON дані
 })
@@ -200,8 +200,8 @@ router.post('/user-update', function (req, res) {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'success-info',
     info: result
-      ? "User's email address has been updated"
-      : 'Error has been occurred',
+      ? "Електронну адресу користувача оновлено"
+      : 'Сталася помилка',
   })
   // ↑↑ сюди вводимо JSON дані
 })
@@ -241,7 +241,7 @@ router.post('/product-create', function (req, res) {
   res.render('alert', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'alert',
-    info: 'Товар успішно був видалений',
+    info: 'Товар успішно був внесений',
   })
   // ↑↑ сюди вводимо JSON дані
 })
