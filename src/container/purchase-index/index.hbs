@@ -2,10 +2,17 @@
 Це код container файлу для index сторінки, 
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  }}
- <main>
-  Index page
-</main>
 
+<main class="main">
+  {{> heading title="Товари" info="Комп'ютери та ноутбуки / Комп'ютери, неттопи, моноблоки"}}
+
+
+  <div class="product-list">
+    {{#each data.list}}
+    {{> purchase-product data=this}}
+    {{/each}}
+  </div>
+</main>
 
 {{! 
     Цей код містить лише те, що буде виводитись в <body>
